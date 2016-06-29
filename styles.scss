@@ -1,0 +1,53 @@
+$font: Verdana, sans-serif;
+$aqua: #ccffff;
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: $font;
+  background-color: white;
+
+  input {
+    margin-top: 15%;
+    font-size: 1.5em;
+    padding: .25%;
+    border: 3px solid #bfbfbf;
+    width: 20%;
+    background-color: white;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  .allSongs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+    .playlist {
+      width: 30%;
+      height: 2.5em;
+      background-color: darken($aqua, 40%);
+      padding: .5%;
+      margin-top: 1%;
+      border: 3px solid #bfbfbf;
+      color: grey;
+      font-size: 1em;
+      font-weight: bolder;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a {
+      color: grey;
+    }
+  
+  }
+}
